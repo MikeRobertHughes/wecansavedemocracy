@@ -28,7 +28,7 @@
   "dependencies": {
     "axios": "^0.15.3",
     "babel-preset-stage-1": "^6.1.18",
-    "css-loader": "^0.26.1",
+    "css-loader": "^1.0.0",
     "file-loader": "^0.10.0",
     "json-loader": "^0.5.4",
     "lodash": "^4.17.2",
