@@ -7,7 +7,9 @@
   "scripts": {
     "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
     "test": "mocha --compilers js:babel-core/register --require ./test/test_helper.js --recursive ./test",
-    "test:watch": "npm run test -- --watch"
+    "test:watch": "npm run test -- --watch",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "author": "",
   "license": "ISC",
@@ -46,6 +48,8 @@
     "redux-form-material-ui": "^4.1.2",
     "redux-promise": "^0.5.3",
     "striptags": "^2.2.1",
-    "style-loader": "^0.13.1"
-  }
+    "style-loader": "^0.13.1",
+    "snyk": "^1.316.1"
+  },
+  "snyk": true
 }
